@@ -1,0 +1,21 @@
+<div class="row container mt-4">
+
+    <div class="col-3">
+      <h2>Search:</h2>
+      <hr/>
+      <ul class="list-group">
+        <li class="list-group-item"routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact : true }">Search by Country</li>
+        <!-- <li class="list-group-item"routerLink="capital">Search by Name</li> -->
+        <li class="list-group-item" routerLink="region" routerLinkActive="active">Search by Region</li>
+        <li class="list-group-item" routerLink="capital" routerLinkActive="active">Search by Capital</li>
+      </ul>
+  
+    </div>
+  <!-- this div needs to change acording the user selection - Using Routes -->
+    <div class="col"> 
+    <router-outlet></router-outlet>
+      <hr/>
+  
+    </div>
+  
+  </div>
